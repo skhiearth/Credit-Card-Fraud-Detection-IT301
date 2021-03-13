@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65A4FB4BD38200BF7B1A6B43 /* Pods_Credit_Card_Fraud_Detection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFC6BC3088C5DC8DAAA4427 /* Pods_Credit_Card_Fraud_Detection.framework */; };
 		D06E682125FCCD7500B53895 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E682025FCCD7500B53895 /* AppDelegate.swift */; };
 		D06E682325FCCD7500B53895 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E682225FCCD7500B53895 /* SceneDelegate.swift */; };
 		D06E682525FCCD7500B53895 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E682425FCCD7500B53895 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		225A9256E2E6E9614D891BC0 /* Pods-Credit Card Fraud Detection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credit Card Fraud Detection.release.xcconfig"; path = "Target Support Files/Pods-Credit Card Fraud Detection/Pods-Credit Card Fraud Detection.release.xcconfig"; sourceTree = "<group>"; };
+		9C1B7A9C6589F2B209A8E252 /* Pods-Credit Card Fraud Detection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credit Card Fraud Detection.debug.xcconfig"; path = "Target Support Files/Pods-Credit Card Fraud Detection/Pods-Credit Card Fraud Detection.debug.xcconfig"; sourceTree = "<group>"; };
+		CCFC6BC3088C5DC8DAAA4427 /* Pods_Credit_Card_Fraud_Detection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Credit_Card_Fraud_Detection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D06E681D25FCCD7500B53895 /* Credit Card Fraud Detection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Credit Card Fraud Detection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D06E682025FCCD7500B53895 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D06E682225FCCD7500B53895 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65A4FB4BD38200BF7B1A6B43 /* Pods_Credit_Card_Fraud_Detection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		033A128D55264948FC74E10F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C1B7A9C6589F2B209A8E252 /* Pods-Credit Card Fraud Detection.debug.xcconfig */,
+				225A9256E2E6E9614D891BC0 /* Pods-Credit Card Fraud Detection.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		16B28BBDFEB8AD1007DC23C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCFC6BC3088C5DC8DAAA4427 /* Pods_Credit_Card_Fraud_Detection.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D06E681425FCCD7500B53895 = {
 			isa = PBXGroup;
 			children = (
 				D06E681F25FCCD7500B53895 /* Credit Card Fraud Detection */,
 				D06E681E25FCCD7500B53895 /* Products */,
+				033A128D55264948FC74E10F /* Pods */,
+				16B28BBDFEB8AD1007DC23C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D06E683125FCCD7800B53895 /* Build configuration list for PBXNativeTarget "Credit Card Fraud Detection" */;
 			buildPhases = (
+				A2FD457335DFD2159056F6D5 /* [CP] Check Pods Manifest.lock */,
 				D06E681925FCCD7500B53895 /* Sources */,
 				D06E681A25FCCD7500B53895 /* Frameworks */,
 				D06E681B25FCCD7500B53895 /* Resources */,
@@ -131,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A2FD457335DFD2159056F6D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Credit Card Fraud Detection-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D06E681925FCCD7500B53895 /* Sources */ = {
@@ -283,6 +334,7 @@
 		};
 		D06E683225FCCD7800B53895 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C1B7A9C6589F2B209A8E252 /* Pods-Credit Card Fraud Detection.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +354,7 @@
 		};
 		D06E683325FCCD7800B53895 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 225A9256E2E6E9614D891BC0 /* Pods-Credit Card Fraud Detection.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

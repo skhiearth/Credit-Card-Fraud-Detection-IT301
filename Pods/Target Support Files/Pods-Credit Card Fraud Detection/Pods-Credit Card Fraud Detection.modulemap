@@ -1,0 +1,6 @@
+framework module Pods_Credit_Card_Fraud_Detection {
+  umbrella header "Pods-Credit Card Fraud Detection-umbrella.h"
+
+  export *
+  module * { export * }
+}

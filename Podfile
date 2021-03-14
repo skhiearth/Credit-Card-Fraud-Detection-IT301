@@ -6,5 +6,6 @@ target 'Credit Card Fraud Detection' do
   use_frameworks!
 
   # Pods for Credit Card Fraud Detection
+  pod "CDAlertView"
 
 end

@@ -7,103 +7,294 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		395A54A785EAA6939926029224B4C829 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		9440A03E974206B0D979EEAD9A685E40 /* Pods-Credit Card Fraud Detection-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25394F1686B69F15217507AB3755F66F /* Pods-Credit Card Fraud Detection-dummy.m */; };
-		EF7186BB4DECD3F558EACCDF7B4A2B2C /* Pods-Credit Card Fraud Detection-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 109BA941DFD1F905082473106A3EEFD5 /* Pods-Credit Card Fraud Detection-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00CEEB4771BBB714E4C2BEB4B1D93BF4 /* notificationOutline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E67885F2FCE23DDE7C4663FD8A0BEA69 /* notificationOutline@2x.png */; };
+		00E452D6080D34F937DC9B05F2CF375D /* Pods-Credit Card Fraud Detection-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D1DBC569C318E5D572C70BAD7A5C34B /* Pods-Credit Card Fraud Detection-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A6E4908EC20ABB1195A42E775635D86 /* notificationFilled@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2327CE7D49FD2131E4D1876C6D0379EC /* notificationFilled@1x.png */; };
+		1FB9CBC8B3D055B81AF0C6DEB405DE1D /* CDAlertHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9E4A8D01E7B50A76788C35E5C4C28B /* CDAlertHeaderView.swift */; };
+		22182FD62CAC6CA9C9B6FAA3D9577604 /* alarmFilled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC31E8303DD305B348E348554432EE42 /* alarmFilled@2x.png */; };
+		236F8EC0D4F472A8C098B0842A164ADE /* CDAlertView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABAF209E06E675215E93F8799C9B9A43 /* CDAlertView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23A25F8C84E0B0904AA876B53D06A1EE /* error@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB6C202898D44747FC22C6B7BFDDD95 /* error@1x.png */; };
+		24B1CF56ED6152C6E75A96E13D2A13D0 /* alarmFilled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A674262A94713D929F3E0C9D571E49 /* alarmFilled@3x.png */; };
+		2D99EDCB94747AF4EED28B5936DFC3D5 /* warningOutline@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1A6E4761D48F9AB63BB2C985D14898F /* warningOutline@1x.png */; };
+		32A1EEF8394BE92BFDBA38DE445F609B /* warningOutline@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3168F1C774D41D4D6A4616891FB878C /* warningOutline@3x.png */; };
+		4230F0147375BFEBCEAE1D2B2B274CDE /* CDAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF140230E753B0A7D6A5A51D007378B /* CDAlertView.swift */; };
+		470A4900C800F9970C65FC116728B2CF /* error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F80C9CA8BFD1C0EBDDF293F3DD8087FB /* error@2x.png */; };
+		4854E889E1BB991B43123B1DFE52E0B3 /* notificationOutline@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBBECFABC09898B8A64468FF0B091CA1 /* notificationOutline@1x.png */; };
+		518DFD86F86593BF2DB7A84561A31566 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		53233B7B1F65A8E31D1B0922F7F78AA1 /* CDAlertView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D50D8796DF07DEBFF6874054B4D4914 /* CDAlertView-dummy.m */; };
+		6C49A7C2454B829DD1971F1D788090F7 /* notificationOutline@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49093525E3F1CB9411DD25CE53B71570 /* notificationOutline@3x.png */; };
+		7DA4E83D588E8F11432A4CAA1A4623D0 /* LayoutConstraintsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8F51E8A6405C25C44FF226698AAB73 /* LayoutConstraintsExtension.swift */; };
+		8DD4F99AE8D182097F336D34453D22B2 /* check@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 67911FF5F91211E7321B2ACD9D1A0690 /* check@1x.png */; };
+		8F1F5CCA3FC3594AE5413E1989AFF0AA /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 644974DBBA3BC2D105D54AFC317E373B /* ImageHelper.swift */; };
+		9363486591A1DE03848197F5B83F79C8 /* notificationFilled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 50C2894D8F3538E3DCAC9A5CECE9413D /* notificationFilled@3x.png */; };
+		9601F4AF58685CDC3ED28FEB04E2AA1B /* warningFilled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 630F8D4C61F0DF6804E054D894C0CAED /* warningFilled@2x.png */; };
+		9922BF4E68739865622CA37260AADF53 /* CDAlertViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97FC7D21E2187D0728154281455F8AE /* CDAlertViewType.swift */; };
+		B3252FBE78944992DFAE2076C084CE1E /* check@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 77B86F9B3B194221A6A00184E78713EE /* check@2x.png */; };
+		B56C17B09EDEBE8C5D0D4DF098726E7E /* warningFilled@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 510FA930E2D5DB18A88EB17D82E2264A /* warningFilled@1x.png */; };
+		B7B81F07AB5225F631B8D61179FC3BFD /* alarmFilled@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7B01207941552728F110F3FD29ED5D /* alarmFilled@1x.png */; };
+		BE1E2582CF8C9AE6A003E18AD4FB942E /* alarmOutline@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0EA3828DD11A49537C71A51691940ED /* alarmOutline@3x.png */; };
+		C24C295F829E93D95A0D187800DE9178 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		C5FD0C33EF44A41C0F97C6C11D3A69B1 /* error@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 45021BA2673D018F4C771F5FE00175CA /* error@3x.png */; };
+		CBF95D6C478D761BEA3E99305552EB6F /* CDAlertView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E417FD65D5A1F9B3171583531D47A61C /* CDAlertView.bundle */; };
+		E2C652069E395DB8F5605FC6631E22C3 /* warningOutline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCD79A732AA348662C63E7E3C7C464B2 /* warningOutline@2x.png */; };
+		E316EDA815FB763190B2384CED06605E /* check@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59EA2157F9E307F791DDD8DB629AD0CC /* check@3x.png */; };
+		E4AA55C552029B37CC85ADDEB8976623 /* Pods-Credit Card Fraud Detection-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 82F9A5442DD9CE1C533579D73BBEEAC2 /* Pods-Credit Card Fraud Detection-dummy.m */; };
+		EA272016D1414A40DAC3CBE4E53A352C /* warningFilled@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CE9A773E0D85A35D0F02379E184AAC5 /* warningFilled@3x.png */; };
+		EB6174DD5FC78DA7F8C7BDC559D00E5E /* alarmOutline@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FB70D04A28D14834C7A6B6A7891CD7 /* alarmOutline@1x.png */; };
+		EDDA699ABF24A8449758976818A58815 /* notificationFilled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C08F1B7FC10C267F416C4B2E5C8B3780 /* notificationFilled@2x.png */; };
+		EE9B099680DBD6DA8BAC24E580D62C0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		F0045166202994A897975E8F08E749DA /* alarmOutline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EE455BA1E584CBA97B1E435FDD0D3CAE /* alarmOutline@2x.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		399CC8FF1E66C4552BC6EDC84861DDF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F08944E713B18D3C01A791D5A3614D1F;
+			remoteInfo = "CDAlertView-CDAlertView";
+		};
+		F45929E3537F5A5E89E4026EB88A5317 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99AC7779AA0E07D337CFA388DF690218;
+			remoteInfo = CDAlertView;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		0EEDE82240D0676395FF6DA816031D07 /* Pods-Credit Card Fraud Detection-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Credit Card Fraud Detection-acknowledgements.markdown"; sourceTree = "<group>"; };
-		109BA941DFD1F905082473106A3EEFD5 /* Pods-Credit Card Fraud Detection-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Credit Card Fraud Detection-umbrella.h"; sourceTree = "<group>"; };
-		25394F1686B69F15217507AB3755F66F /* Pods-Credit Card Fraud Detection-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Credit Card Fraud Detection-dummy.m"; sourceTree = "<group>"; };
-		37A2371D41BD5683AF4501267A0A29FB /* Pods-Credit Card Fraud Detection-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Credit Card Fraud Detection-Info.plist"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		75E3BEB392BB1FF23067C8ED0F1764AF /* Pods-Credit Card Fraud Detection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Credit Card Fraud Detection.release.xcconfig"; sourceTree = "<group>"; };
+		06A674262A94713D929F3E0C9D571E49 /* alarmFilled@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "alarmFilled@3x.png"; path = "CDAlertView/Resources/Assets/alarmFilled@3x.png"; sourceTree = "<group>"; };
+		0D50D8796DF07DEBFF6874054B4D4914 /* CDAlertView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CDAlertView-dummy.m"; sourceTree = "<group>"; };
+		0DF140230E753B0A7D6A5A51D007378B /* CDAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDAlertView.swift; path = CDAlertView/Classes/CDAlertView.swift; sourceTree = "<group>"; };
+		19A2C9AA1561C4E4144878BB6B81FE8E /* CDAlertView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CDAlertView.debug.xcconfig; sourceTree = "<group>"; };
+		2327CE7D49FD2131E4D1876C6D0379EC /* notificationFilled@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "notificationFilled@1x.png"; path = "CDAlertView/Resources/Assets/notificationFilled@1x.png"; sourceTree = "<group>"; };
+		2E9E4A8D01E7B50A76788C35E5C4C28B /* CDAlertHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDAlertHeaderView.swift; path = CDAlertView/Classes/CDAlertHeaderView.swift; sourceTree = "<group>"; };
+		3B4A5E04C9B8B7F850C25B409FE30F88 /* CDAlertView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CDAlertView.release.xcconfig; sourceTree = "<group>"; };
+		3D1DBC569C318E5D572C70BAD7A5C34B /* Pods-Credit Card Fraud Detection-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Credit Card Fraud Detection-umbrella.h"; sourceTree = "<group>"; };
+		433AC29E5B39B5485DD17A6694557934 /* CDAlertView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CDAlertView.modulemap; sourceTree = "<group>"; };
+		45021BA2673D018F4C771F5FE00175CA /* error@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "error@3x.png"; path = "CDAlertView/Resources/Assets/error@3x.png"; sourceTree = "<group>"; };
+		46825A356B036577EC5E57B9E3495658 /* Pods-Credit Card Fraud Detection-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Credit Card Fraud Detection-frameworks.sh"; sourceTree = "<group>"; };
+		49093525E3F1CB9411DD25CE53B71570 /* notificationOutline@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "notificationOutline@3x.png"; path = "CDAlertView/Resources/Assets/notificationOutline@3x.png"; sourceTree = "<group>"; };
+		497444E3780E44ED4F4672834DCE1ED8 /* CDAlertView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CDAlertView.framework; path = CDAlertView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CE9A773E0D85A35D0F02379E184AAC5 /* warningFilled@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningFilled@3x.png"; path = "CDAlertView/Resources/Assets/warningFilled@3x.png"; sourceTree = "<group>"; };
+		50C2894D8F3538E3DCAC9A5CECE9413D /* notificationFilled@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "notificationFilled@3x.png"; path = "CDAlertView/Resources/Assets/notificationFilled@3x.png"; sourceTree = "<group>"; };
+		510FA930E2D5DB18A88EB17D82E2264A /* warningFilled@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningFilled@1x.png"; path = "CDAlertView/Resources/Assets/warningFilled@1x.png"; sourceTree = "<group>"; };
+		59EA2157F9E307F791DDD8DB629AD0CC /* check@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "check@3x.png"; path = "CDAlertView/Resources/Assets/check@3x.png"; sourceTree = "<group>"; };
+		5BB6C202898D44747FC22C6B7BFDDD95 /* error@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "error@1x.png"; path = "CDAlertView/Resources/Assets/error@1x.png"; sourceTree = "<group>"; };
+		5D354CBA6E30BF3B8584C692C7A9F9F4 /* CDAlertView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CDAlertView-prefix.pch"; sourceTree = "<group>"; };
+		5FF6D7937093C2CFC04EC1C770E8FDA7 /* ResourceBundle-CDAlertView-CDAlertView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CDAlertView-CDAlertView-Info.plist"; sourceTree = "<group>"; };
+		630F8D4C61F0DF6804E054D894C0CAED /* warningFilled@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningFilled@2x.png"; path = "CDAlertView/Resources/Assets/warningFilled@2x.png"; sourceTree = "<group>"; };
+		644974DBBA3BC2D105D54AFC317E373B /* ImageHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageHelper.swift; path = CDAlertView/Classes/ImageHelper.swift; sourceTree = "<group>"; };
+		67911FF5F91211E7321B2ACD9D1A0690 /* check@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "check@1x.png"; path = "CDAlertView/Resources/Assets/check@1x.png"; sourceTree = "<group>"; };
+		6EF8CA18DF5BC64B5A828BF4CE0EC25A /* Pods-Credit Card Fraud Detection.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Credit Card Fraud Detection.modulemap"; sourceTree = "<group>"; };
+		77B86F9B3B194221A6A00184E78713EE /* check@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "check@2x.png"; path = "CDAlertView/Resources/Assets/check@2x.png"; sourceTree = "<group>"; };
+		7E7B01207941552728F110F3FD29ED5D /* alarmFilled@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "alarmFilled@1x.png"; path = "CDAlertView/Resources/Assets/alarmFilled@1x.png"; sourceTree = "<group>"; };
+		82F9A5442DD9CE1C533579D73BBEEAC2 /* Pods-Credit Card Fraud Detection-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Credit Card Fraud Detection-dummy.m"; sourceTree = "<group>"; };
 		877ABC128E54C200B3AC5F669CD3FB67 /* Pods_Credit_Card_Fraud_Detection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Credit_Card_Fraud_Detection.framework; path = "Pods-Credit Card Fraud Detection.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8AB55B26956B0E25C077B5CEE878F81D /* Pods-Credit Card Fraud Detection-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Credit Card Fraud Detection-acknowledgements.plist"; sourceTree = "<group>"; };
+		967CE2C3503B29B5675B4ACBCFB3D19D /* Pods-Credit Card Fraud Detection-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Credit Card Fraud Detection-acknowledgements.plist"; sourceTree = "<group>"; };
+		9CD3921C1D65706395B0CB7F5F21F5B8 /* Pods-Credit Card Fraud Detection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Credit Card Fraud Detection.debug.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B5CFEE1271E7E6296429242AA1E04BFF /* Pods-Credit Card Fraud Detection.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Credit Card Fraud Detection.modulemap"; sourceTree = "<group>"; };
-		FF9D92B843C5BA5343E9D8487633B41E /* Pods-Credit Card Fraud Detection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Credit Card Fraud Detection.debug.xcconfig"; sourceTree = "<group>"; };
+		A8FE4EBDEB7ECA7E4150E4DE93E12E72 /* Pods-Credit Card Fraud Detection-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Credit Card Fraud Detection-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ABAF209E06E675215E93F8799C9B9A43 /* CDAlertView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CDAlertView-umbrella.h"; sourceTree = "<group>"; };
+		AC9CBD8C91B35BB590ABCE5D670671DF /* CDAlertView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CDAlertView-Info.plist"; sourceTree = "<group>"; };
+		B0EA3828DD11A49537C71A51691940ED /* alarmOutline@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "alarmOutline@3x.png"; path = "CDAlertView/Resources/Assets/alarmOutline@3x.png"; sourceTree = "<group>"; };
+		BBBECFABC09898B8A64468FF0B091CA1 /* notificationOutline@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "notificationOutline@1x.png"; path = "CDAlertView/Resources/Assets/notificationOutline@1x.png"; sourceTree = "<group>"; };
+		BCD79A732AA348662C63E7E3C7C464B2 /* warningOutline@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningOutline@2x.png"; path = "CDAlertView/Resources/Assets/warningOutline@2x.png"; sourceTree = "<group>"; };
+		C08F1B7FC10C267F416C4B2E5C8B3780 /* notificationFilled@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "notificationFilled@2x.png"; path = "CDAlertView/Resources/Assets/notificationFilled@2x.png"; sourceTree = "<group>"; };
+		C3FB70D04A28D14834C7A6B6A7891CD7 /* alarmOutline@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "alarmOutline@1x.png"; path = "CDAlertView/Resources/Assets/alarmOutline@1x.png"; sourceTree = "<group>"; };
+		C915BCA2AA181418905292FD9878D103 /* Pods-Credit Card Fraud Detection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Credit Card Fraud Detection.release.xcconfig"; sourceTree = "<group>"; };
+		C97FC7D21E2187D0728154281455F8AE /* CDAlertViewType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CDAlertViewType.swift; path = CDAlertView/Classes/CDAlertViewType.swift; sourceTree = "<group>"; };
+		CC31E8303DD305B348E348554432EE42 /* alarmFilled@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "alarmFilled@2x.png"; path = "CDAlertView/Resources/Assets/alarmFilled@2x.png"; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D3168F1C774D41D4D6A4616891FB878C /* warningOutline@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningOutline@3x.png"; path = "CDAlertView/Resources/Assets/warningOutline@3x.png"; sourceTree = "<group>"; };
+		DA8F51E8A6405C25C44FF226698AAB73 /* LayoutConstraintsExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintsExtension.swift; path = CDAlertView/Classes/LayoutConstraintsExtension.swift; sourceTree = "<group>"; };
+		DEC03B0890C1B6A580301F8CCC22A414 /* Pods-Credit Card Fraud Detection-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Credit Card Fraud Detection-Info.plist"; sourceTree = "<group>"; };
+		E1A6E4761D48F9AB63BB2C985D14898F /* warningOutline@1x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warningOutline@1x.png"; path = "CDAlertView/Resources/Assets/warningOutline@1x.png"; sourceTree = "<group>"; };
+		E417FD65D5A1F9B3171583531D47A61C /* CDAlertView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = CDAlertView.bundle; path = "CDAlertView-CDAlertView.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E67885F2FCE23DDE7C4663FD8A0BEA69 /* notificationOutline@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "notificationOutline@2x.png"; path = "CDAlertView/Resources/Assets/notificationOutline@2x.png"; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EE455BA1E584CBA97B1E435FDD0D3CAE /* alarmOutline@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "alarmOutline@2x.png"; path = "CDAlertView/Resources/Assets/alarmOutline@2x.png"; sourceTree = "<group>"; };
+		F80C9CA8BFD1C0EBDDF293F3DD8087FB /* error@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "error@2x.png"; path = "CDAlertView/Resources/Assets/error@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EA40135CAA398356D3FCE5D82F20C042 /* Frameworks */ = {
+		3A6C2EBEDEC3DCA7FBD3ACB2E4ADE6D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				395A54A785EAA6939926029224B4C829 /* Foundation.framework in Frameworks */,
+				518DFD86F86593BF2DB7A84561A31566 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B803D3AFAF5F38DB820CB6764E761BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		958FB5351B0BB0A56B75554F6B184D17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C24C295F829E93D95A0D187800DE9178 /* Foundation.framework in Frameworks */,
+				EE9B099680DBD6DA8BAC24E580D62C0B /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F42DEE9B51CBD15FB3176E0BACFF178 /* Pods-Credit Card Fraud Detection */ = {
+		07E9A681A181EA5281CF1C713BC4CB70 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B5CFEE1271E7E6296429242AA1E04BFF /* Pods-Credit Card Fraud Detection.modulemap */,
-				0EEDE82240D0676395FF6DA816031D07 /* Pods-Credit Card Fraud Detection-acknowledgements.markdown */,
-				8AB55B26956B0E25C077B5CEE878F81D /* Pods-Credit Card Fraud Detection-acknowledgements.plist */,
-				25394F1686B69F15217507AB3755F66F /* Pods-Credit Card Fraud Detection-dummy.m */,
-				37A2371D41BD5683AF4501267A0A29FB /* Pods-Credit Card Fraud Detection-Info.plist */,
-				109BA941DFD1F905082473106A3EEFD5 /* Pods-Credit Card Fraud Detection-umbrella.h */,
-				FF9D92B843C5BA5343E9D8487633B41E /* Pods-Credit Card Fraud Detection.debug.xcconfig */,
-				75E3BEB392BB1FF23067C8ED0F1764AF /* Pods-Credit Card Fraud Detection.release.xcconfig */,
+				433AC29E5B39B5485DD17A6694557934 /* CDAlertView.modulemap */,
+				0D50D8796DF07DEBFF6874054B4D4914 /* CDAlertView-dummy.m */,
+				AC9CBD8C91B35BB590ABCE5D670671DF /* CDAlertView-Info.plist */,
+				5D354CBA6E30BF3B8584C692C7A9F9F4 /* CDAlertView-prefix.pch */,
+				ABAF209E06E675215E93F8799C9B9A43 /* CDAlertView-umbrella.h */,
+				19A2C9AA1561C4E4144878BB6B81FE8E /* CDAlertView.debug.xcconfig */,
+				3B4A5E04C9B8B7F850C25B409FE30F88 /* CDAlertView.release.xcconfig */,
+				5FF6D7937093C2CFC04EC1C770E8FDA7 /* ResourceBundle-CDAlertView-CDAlertView-Info.plist */,
 			);
-			name = "Pods-Credit Card Fraud Detection";
-			path = "Target Support Files/Pods-Credit Card Fraud Detection";
+			name = "Support Files";
+			path = "../Target Support Files/CDAlertView";
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		0D0230237E31674282BE991242D56E14 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				99117F86D672D51BFF5C9DE5CFEDA35A /* CDAlertView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		938254B3D34DE6B5FED2C8DA51ACC396 /* Products */ = {
+		99117F86D672D51BFF5C9DE5CFEDA35A /* CDAlertView */ = {
 			isa = PBXGroup;
 			children = (
-				877ABC128E54C200B3AC5F669CD3FB67 /* Pods_Credit_Card_Fraud_Detection.framework */,
+				2E9E4A8D01E7B50A76788C35E5C4C28B /* CDAlertHeaderView.swift */,
+				0DF140230E753B0A7D6A5A51D007378B /* CDAlertView.swift */,
+				C97FC7D21E2187D0728154281455F8AE /* CDAlertViewType.swift */,
+				644974DBBA3BC2D105D54AFC317E373B /* ImageHelper.swift */,
+				DA8F51E8A6405C25C44FF226698AAB73 /* LayoutConstraintsExtension.swift */,
+				D9078816BC6A2C687439E368D6A015F8 /* Resources */,
+				07E9A681A181EA5281CF1C713BC4CB70 /* Support Files */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C99ADD14A936C5B0FC3A11539C23904F /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1F42DEE9B51CBD15FB3176E0BACFF178 /* Pods-Credit Card Fraud Detection */,
-			);
-			name = "Targets Support Files";
+			name = CDAlertView;
+			path = CDAlertView;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				938254B3D34DE6B5FED2C8DA51ACC396 /* Products */,
-				C99ADD14A936C5B0FC3A11539C23904F /* Targets Support Files */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				0D0230237E31674282BE991242D56E14 /* Pods */,
+				FCB63A160D3B9A114A09157EED8D2EDF /* Products */,
+				DD1855208617FB055997CC136F9350F7 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		D9078816BC6A2C687439E368D6A015F8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				7E7B01207941552728F110F3FD29ED5D /* alarmFilled@1x.png */,
+				CC31E8303DD305B348E348554432EE42 /* alarmFilled@2x.png */,
+				06A674262A94713D929F3E0C9D571E49 /* alarmFilled@3x.png */,
+				C3FB70D04A28D14834C7A6B6A7891CD7 /* alarmOutline@1x.png */,
+				EE455BA1E584CBA97B1E435FDD0D3CAE /* alarmOutline@2x.png */,
+				B0EA3828DD11A49537C71A51691940ED /* alarmOutline@3x.png */,
+				67911FF5F91211E7321B2ACD9D1A0690 /* check@1x.png */,
+				77B86F9B3B194221A6A00184E78713EE /* check@2x.png */,
+				59EA2157F9E307F791DDD8DB629AD0CC /* check@3x.png */,
+				5BB6C202898D44747FC22C6B7BFDDD95 /* error@1x.png */,
+				F80C9CA8BFD1C0EBDDF293F3DD8087FB /* error@2x.png */,
+				45021BA2673D018F4C771F5FE00175CA /* error@3x.png */,
+				2327CE7D49FD2131E4D1876C6D0379EC /* notificationFilled@1x.png */,
+				C08F1B7FC10C267F416C4B2E5C8B3780 /* notificationFilled@2x.png */,
+				50C2894D8F3538E3DCAC9A5CECE9413D /* notificationFilled@3x.png */,
+				BBBECFABC09898B8A64468FF0B091CA1 /* notificationOutline@1x.png */,
+				E67885F2FCE23DDE7C4663FD8A0BEA69 /* notificationOutline@2x.png */,
+				49093525E3F1CB9411DD25CE53B71570 /* notificationOutline@3x.png */,
+				510FA930E2D5DB18A88EB17D82E2264A /* warningFilled@1x.png */,
+				630F8D4C61F0DF6804E054D894C0CAED /* warningFilled@2x.png */,
+				4CE9A773E0D85A35D0F02379E184AAC5 /* warningFilled@3x.png */,
+				E1A6E4761D48F9AB63BB2C985D14898F /* warningOutline@1x.png */,
+				BCD79A732AA348662C63E7E3C7C464B2 /* warningOutline@2x.png */,
+				D3168F1C774D41D4D6A4616891FB878C /* warningOutline@3x.png */,
 			);
-			name = Frameworks;
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DD1855208617FB055997CC136F9350F7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F49100B6A49283E11C4B15380668E2EB /* Pods-Credit Card Fraud Detection */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F49100B6A49283E11C4B15380668E2EB /* Pods-Credit Card Fraud Detection */ = {
+			isa = PBXGroup;
+			children = (
+				6EF8CA18DF5BC64B5A828BF4CE0EC25A /* Pods-Credit Card Fraud Detection.modulemap */,
+				A8FE4EBDEB7ECA7E4150E4DE93E12E72 /* Pods-Credit Card Fraud Detection-acknowledgements.markdown */,
+				967CE2C3503B29B5675B4ACBCFB3D19D /* Pods-Credit Card Fraud Detection-acknowledgements.plist */,
+				82F9A5442DD9CE1C533579D73BBEEAC2 /* Pods-Credit Card Fraud Detection-dummy.m */,
+				46825A356B036577EC5E57B9E3495658 /* Pods-Credit Card Fraud Detection-frameworks.sh */,
+				DEC03B0890C1B6A580301F8CCC22A414 /* Pods-Credit Card Fraud Detection-Info.plist */,
+				3D1DBC569C318E5D572C70BAD7A5C34B /* Pods-Credit Card Fraud Detection-umbrella.h */,
+				9CD3921C1D65706395B0CB7F5F21F5B8 /* Pods-Credit Card Fraud Detection.debug.xcconfig */,
+				C915BCA2AA181418905292FD9878D103 /* Pods-Credit Card Fraud Detection.release.xcconfig */,
+			);
+			name = "Pods-Credit Card Fraud Detection";
+			path = "Target Support Files/Pods-Credit Card Fraud Detection";
+			sourceTree = "<group>";
+		};
+		FCB63A160D3B9A114A09157EED8D2EDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E417FD65D5A1F9B3171583531D47A61C /* CDAlertView.bundle */,
+				497444E3780E44ED4F4672834DCE1ED8 /* CDAlertView.framework */,
+				877ABC128E54C200B3AC5F669CD3FB67 /* Pods_Credit_Card_Fraud_Detection.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A596C2AA118B84DFFB5CB688E5C4777E /* Headers */ = {
+		29AD12E8EB1634C6535C96D1E242F234 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF7186BB4DECD3F558EACCDF7B4A2B2C /* Pods-Credit Card Fraud Detection-umbrella.h in Headers */,
+				236F8EC0D4F472A8C098B0842A164ADE /* CDAlertView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E09A29381BCD92B1DD8E4292F54C5C91 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E452D6080D34F937DC9B05F2CF375D /* Pods-Credit Card Fraud Detection-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,21 +303,58 @@
 /* Begin PBXNativeTarget section */
 		5F3244BCBC92DD45DE77A5C7CCC89D9C /* Pods-Credit Card Fraud Detection */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CA96632A9AF0248B87426956E5AE9CC1 /* Build configuration list for PBXNativeTarget "Pods-Credit Card Fraud Detection" */;
+			buildConfigurationList = 83E270A4B86D395D2AE6A2179C519015 /* Build configuration list for PBXNativeTarget "Pods-Credit Card Fraud Detection" */;
 			buildPhases = (
-				A596C2AA118B84DFFB5CB688E5C4777E /* Headers */,
-				37371D3ABBBC7990BCF3D1E0E2A32677 /* Sources */,
-				EA40135CAA398356D3FCE5D82F20C042 /* Frameworks */,
-				C8B83AABF02E0416BEF6D6C890210A65 /* Resources */,
+				E09A29381BCD92B1DD8E4292F54C5C91 /* Headers */,
+				85FB0626CF07737D7EEDB38B3AF626F5 /* Sources */,
+				3A6C2EBEDEC3DCA7FBD3ACB2E4ADE6D7 /* Frameworks */,
+				B8683597B988C38C6985CD4B03628970 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				075F0497919DFC7E6ECF5B571A29E8A0 /* PBXTargetDependency */,
 			);
 			name = "Pods-Credit Card Fraud Detection";
 			productName = "Pods-Credit Card Fraud Detection";
 			productReference = 877ABC128E54C200B3AC5F669CD3FB67 /* Pods_Credit_Card_Fraud_Detection.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		99AC7779AA0E07D337CFA388DF690218 /* CDAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E9AC33BC2344DA78ABD16CFBD517BCB /* Build configuration list for PBXNativeTarget "CDAlertView" */;
+			buildPhases = (
+				29AD12E8EB1634C6535C96D1E242F234 /* Headers */,
+				CD59C5CDC104102FEDEE6C0C7D2169DD /* Sources */,
+				958FB5351B0BB0A56B75554F6B184D17 /* Frameworks */,
+				614C18B82181EFF061D844FB4347B15A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E02AF3FD259AFFEB1EAD17936B77FE7 /* PBXTargetDependency */,
+			);
+			name = CDAlertView;
+			productName = CDAlertView;
+			productReference = 497444E3780E44ED4F4672834DCE1ED8 /* CDAlertView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F08944E713B18D3C01A791D5A3614D1F /* CDAlertView-CDAlertView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 973062AA00F587BB88FE19D3680BBDD5 /* Build configuration list for PBXNativeTarget "CDAlertView-CDAlertView" */;
+			buildPhases = (
+				C0968B751D8BABF67DAEED7A896B05CC /* Sources */,
+				3B803D3AFAF5F38DB820CB6764E761BE /* Frameworks */,
+				28F8E3692A88641A68C38FFA8C99C0E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CDAlertView-CDAlertView";
+			productName = "CDAlertView-CDAlertView";
+			productReference = E417FD65D5A1F9B3171583531D47A61C /* CDAlertView.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -146,17 +374,58 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 938254B3D34DE6B5FED2C8DA51ACC396 /* Products */;
+			productRefGroup = FCB63A160D3B9A114A09157EED8D2EDF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				99AC7779AA0E07D337CFA388DF690218 /* CDAlertView */,
+				F08944E713B18D3C01A791D5A3614D1F /* CDAlertView-CDAlertView */,
 				5F3244BCBC92DD45DE77A5C7CCC89D9C /* Pods-Credit Card Fraud Detection */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C8B83AABF02E0416BEF6D6C890210A65 /* Resources */ = {
+		28F8E3692A88641A68C38FFA8C99C0E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B81F07AB5225F631B8D61179FC3BFD /* alarmFilled@1x.png in Resources */,
+				22182FD62CAC6CA9C9B6FAA3D9577604 /* alarmFilled@2x.png in Resources */,
+				24B1CF56ED6152C6E75A96E13D2A13D0 /* alarmFilled@3x.png in Resources */,
+				EB6174DD5FC78DA7F8C7BDC559D00E5E /* alarmOutline@1x.png in Resources */,
+				F0045166202994A897975E8F08E749DA /* alarmOutline@2x.png in Resources */,
+				BE1E2582CF8C9AE6A003E18AD4FB942E /* alarmOutline@3x.png in Resources */,
+				8DD4F99AE8D182097F336D34453D22B2 /* check@1x.png in Resources */,
+				B3252FBE78944992DFAE2076C084CE1E /* check@2x.png in Resources */,
+				E316EDA815FB763190B2384CED06605E /* check@3x.png in Resources */,
+				23A25F8C84E0B0904AA876B53D06A1EE /* error@1x.png in Resources */,
+				470A4900C800F9970C65FC116728B2CF /* error@2x.png in Resources */,
+				C5FD0C33EF44A41C0F97C6C11D3A69B1 /* error@3x.png in Resources */,
+				0A6E4908EC20ABB1195A42E775635D86 /* notificationFilled@1x.png in Resources */,
+				EDDA699ABF24A8449758976818A58815 /* notificationFilled@2x.png in Resources */,
+				9363486591A1DE03848197F5B83F79C8 /* notificationFilled@3x.png in Resources */,
+				4854E889E1BB991B43123B1DFE52E0B3 /* notificationOutline@1x.png in Resources */,
+				00CEEB4771BBB714E4C2BEB4B1D93BF4 /* notificationOutline@2x.png in Resources */,
+				6C49A7C2454B829DD1971F1D788090F7 /* notificationOutline@3x.png in Resources */,
+				B56C17B09EDEBE8C5D0D4DF098726E7E /* warningFilled@1x.png in Resources */,
+				9601F4AF58685CDC3ED28FEB04E2AA1B /* warningFilled@2x.png in Resources */,
+				EA272016D1414A40DAC3CBE4E53A352C /* warningFilled@3x.png in Resources */,
+				2D99EDCB94747AF4EED28B5936DFC3D5 /* warningOutline@1x.png in Resources */,
+				E2C652069E395DB8F5605FC6631E22C3 /* warningOutline@2x.png in Resources */,
+				32A1EEF8394BE92BFDBA38DE445F609B /* warningOutline@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		614C18B82181EFF061D844FB4347B15A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF95D6C478D761BEA3E99305552EB6F /* CDAlertView.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8683597B988C38C6985CD4B03628970 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -166,22 +435,56 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		37371D3ABBBC7990BCF3D1E0E2A32677 /* Sources */ = {
+		85FB0626CF07737D7EEDB38B3AF626F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9440A03E974206B0D979EEAD9A685E40 /* Pods-Credit Card Fraud Detection-dummy.m in Sources */,
+				E4AA55C552029B37CC85ADDEB8976623 /* Pods-Credit Card Fraud Detection-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0968B751D8BABF67DAEED7A896B05CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD59C5CDC104102FEDEE6C0C7D2169DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FB9CBC8B3D055B81AF0C6DEB405DE1D /* CDAlertHeaderView.swift in Sources */,
+				53233B7B1F65A8E31D1B0922F7F78AA1 /* CDAlertView-dummy.m in Sources */,
+				4230F0147375BFEBCEAE1D2B2B274CDE /* CDAlertView.swift in Sources */,
+				9922BF4E68739865622CA37260AADF53 /* CDAlertViewType.swift in Sources */,
+				8F1F5CCA3FC3594AE5413E1989AFF0AA /* ImageHelper.swift in Sources */,
+				7DA4E83D588E8F11432A4CAA1A4623D0 /* LayoutConstraintsExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		075F0497919DFC7E6ECF5B571A29E8A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CDAlertView;
+			target = 99AC7779AA0E07D337CFA388DF690218 /* CDAlertView */;
+			targetProxy = F45929E3537F5A5E89E4026EB88A5317 /* PBXContainerItemProxy */;
+		};
+		8E02AF3FD259AFFEB1EAD17936B77FE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CDAlertView-CDAlertView";
+			target = F08944E713B18D3C01A791D5A3614D1F /* CDAlertView-CDAlertView */;
+			targetProxy = 399CC8FF1E66C4552BC6EDC84861DDF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		4BE57029755F21104F459D2ED5BD5AC7 /* Release */ = {
+		6487D1F7BFCC920307DC7E6460EBB4C0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75E3BEB392BB1FF23067C8ED0F1764AF /* Pods-Credit Card Fraud Detection.release.xcconfig */;
+			baseConfigurationReference = 3B4A5E04C9B8B7F850C25B409FE30F88 /* CDAlertView.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -191,23 +494,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Credit Card Fraud Detection/Pods-Credit Card Fraud Detection-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/CDAlertView/CDAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CDAlertView/CDAlertView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Credit Card Fraud Detection/Pods-Credit Card Fraud Detection.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/CDAlertView/CDAlertView.modulemap";
+				PRODUCT_MODULE_NAME = CDAlertView;
+				PRODUCT_NAME = CDAlertView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -343,9 +645,9 @@
 			};
 			name = Debug;
 		};
-		BBBD29E412760BF2B38D9BA93E70CF32 /* Debug */ = {
+		85036C74BD06C6A6D4DAC3279220BFCA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF9D92B843C5BA5343E9D8487633B41E /* Pods-Credit Card Fraud Detection.debug.xcconfig */;
+			baseConfigurationReference = 9CD3921C1D65706395B0CB7F5F21F5B8 /* Pods-Credit Card Fraud Detection.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -380,9 +682,123 @@
 			};
 			name = Debug;
 		};
+		B693C754E682791F73A08C482F74329C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C915BCA2AA181418905292FD9878D103 /* Pods-Credit Card Fraud Detection.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Credit Card Fraud Detection/Pods-Credit Card Fraud Detection-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Credit Card Fraud Detection/Pods-Credit Card Fraud Detection.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BB966F8B02312E7A32A42E65FFC1FE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B4A5E04C9B8B7F850C25B409FE30F88 /* CDAlertView.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CDAlertView";
+				IBSC_MODULE = CDAlertView;
+				INFOPLIST_FILE = "Target Support Files/CDAlertView/ResourceBundle-CDAlertView-CDAlertView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = CDAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		E8CFA260ED8B5CD419F6D80F763E6289 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19A2C9AA1561C4E4144878BB6B81FE8E /* CDAlertView.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CDAlertView";
+				IBSC_MODULE = CDAlertView;
+				INFOPLIST_FILE = "Target Support Files/CDAlertView/ResourceBundle-CDAlertView-CDAlertView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				PRODUCT_NAME = CDAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		EFE3F5C201D3EA667B8CFF2BBCBF43B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19A2C9AA1561C4E4144878BB6B81FE8E /* CDAlertView.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CDAlertView/CDAlertView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CDAlertView/CDAlertView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CDAlertView/CDAlertView.modulemap";
+				PRODUCT_MODULE_NAME = CDAlertView;
+				PRODUCT_NAME = CDAlertView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2E9AC33BC2344DA78ABD16CFBD517BCB /* Build configuration list for PBXNativeTarget "CDAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFE3F5C201D3EA667B8CFF2BBCBF43B0 /* Debug */,
+				6487D1F7BFCC920307DC7E6460EBB4C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -392,11 +808,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CA96632A9AF0248B87426956E5AE9CC1 /* Build configuration list for PBXNativeTarget "Pods-Credit Card Fraud Detection" */ = {
+		83E270A4B86D395D2AE6A2179C519015 /* Build configuration list for PBXNativeTarget "Pods-Credit Card Fraud Detection" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BBBD29E412760BF2B38D9BA93E70CF32 /* Debug */,
-				4BE57029755F21104F459D2ED5BD5AC7 /* Release */,
+				85036C74BD06C6A6D4DAC3279220BFCA /* Debug */,
+				B693C754E682791F73A08C482F74329C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		973062AA00F587BB88FE19D3680BBDD5 /* Build configuration list for PBXNativeTarget "CDAlertView-CDAlertView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8CFA260ED8B5CD419F6D80F763E6289 /* Debug */,
+				BB966F8B02312E7A32A42E65FFC1FE63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

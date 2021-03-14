@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hYc-lg-AoW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -11,7 +11,7 @@
         <!--BankVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="BankVC" customModule="Credit_Card_Fraud_Detection" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BankVC" title="BankVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="BankVC" customModule="Credit_Card_Fraud_Detection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -220,6 +220,17 @@
                                     <constraint firstAttribute="bottom" secondItem="uUg-O2-b3c" secondAttribute="bottom" id="zsw-Ga-yTx"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pkF-sm-5bu">
+                                <rect key="frame" x="333" y="96" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="SLm-Jb-vET"/>
+                                    <constraint firstAttribute="height" constant="44" id="pOf-uK-l7Y"/>
+                                </constraints>
+                                <state key="normal" image="plus"/>
+                                <connections>
+                                    <action selector="newTransactionBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jog-R3-L1u"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -227,10 +238,12 @@
                             <constraint firstItem="dfT-KI-VKR" firstAttribute="top" secondItem="tpM-FW-SqL" secondAttribute="bottom" constant="14" id="2Ma-Ns-SrS"/>
                             <constraint firstItem="sWf-Lw-Bsr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="55H-pU-o5y"/>
                             <constraint firstItem="tpM-FW-SqL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="8JF-Tp-zWX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pkF-sm-5bu" secondAttribute="trailing" constant="37" id="DRq-qV-Zdi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VZV-ac-EiL" secondAttribute="bottom" constant="12" id="H9x-UD-2RM"/>
                             <constraint firstItem="sWf-Lw-Bsr" firstAttribute="top" secondItem="Uly-W2-gUY" secondAttribute="bottom" constant="2" id="JJL-h2-ayD"/>
                             <constraint firstItem="dfT-KI-VKR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="Mxj-gH-ov0"/>
                             <constraint firstItem="Uly-W2-gUY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="37" id="PyN-9I-IEA"/>
+                            <constraint firstItem="pkF-sm-5bu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="QIf-Mo-OL0"/>
                             <constraint firstItem="tpM-FW-SqL" firstAttribute="top" secondItem="480-sP-YcW" secondAttribute="bottom" constant="32" id="VWy-79-Irj"/>
                             <constraint firstItem="Uly-W2-gUY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="46" id="WAN-0m-bmV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dfT-KI-VKR" secondAttribute="bottom" constant="64" id="ZjF-an-UMG"/>
@@ -245,6 +258,7 @@
                         <outlet property="balanceUserLbl" destination="exV-6m-Wuq" id="QGu-mN-RbC"/>
                         <outlet property="cardTopLbl" destination="Txv-Ak-Jcf" id="Zob-Iv-1IB"/>
                         <outlet property="cvvLbl" destination="ezu-EW-Qv2" id="jt0-c7-bsQ"/>
+                        <outlet property="newTransactionBtn" destination="pkF-sm-5bu" id="xwO-R0-R3i"/>
                         <outlet property="secondLbl" destination="sWf-Lw-Bsr" id="psh-Ly-QS9"/>
                         <outlet property="subtitleOneLbl" destination="gc7-et-Fzs" id="Rmu-nA-Jpf"/>
                         <outlet property="subtitleTwoLbl" destination="FXF-Yf-a7y" id="3Py-ET-T9J"/>
@@ -257,13 +271,93 @@
             </objects>
             <point key="canvasLocation" x="140.57971014492756" y="106.47321428571428"/>
         </scene>
+        <!--LoginVC-->
+        <scene sceneID="y1u-CT-TfK">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" title="LoginVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hYc-lg-AoW" customClass="LoginVC" customModule="Credit_Card_Fraud_Detection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TYc-ve-vb9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBg" translatesAutoresizingMaskIntoConstraints="NO" id="uba-mN-ca2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="slz-AX-0wN">
+                                <rect key="frame" x="36" y="660" width="212" height="47"/>
+                                <state key="normal" image="bankBtn"/>
+                                <connections>
+                                    <action selector="bankBtnPresseed:" destination="hYc-lg-AoW" eventType="touchUpInside" id="nO4-BX-4QL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8e-Jd-1t0">
+                                <rect key="frame" x="36" y="719" width="212" height="47"/>
+                                <state key="normal" image="userBtn"/>
+                                <connections>
+                                    <action selector="userBtnPressed:" destination="hYc-lg-AoW" eventType="touchUpInside" id="Puf-HP-UtP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Continue as" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFQ-wG-N1o">
+                                <rect key="frame" x="36" y="614" width="102" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="xpd-5I-5VR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" red="0.044147945940000002" green="0.076824463900000001" blue="0.18665084239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit Card Dashboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Qr-gR-lUP">
+                                <rect key="frame" x="121" y="90" width="256" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="ARm-Fz-I4e"/>
+                                    <constraint firstAttribute="width" constant="256" id="IUr-Lp-FlV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.044147945940000002" green="0.076824463900000001" blue="0.18665084239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manage transactions and flag possible fraud" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4SM-ZO-fPG">
+                                <rect key="frame" x="121" y="126" width="256" height="50.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="21"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Mi-Y7-Nga"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="uba-mN-ca2" secondAttribute="bottom" id="AgM-1m-RvQ"/>
+                            <constraint firstItem="9Mi-Y7-Nga" firstAttribute="trailing" secondItem="4SM-ZO-fPG" secondAttribute="trailing" constant="37" id="KPt-c0-tvq"/>
+                            <constraint firstItem="PFQ-wG-N1o" firstAttribute="leading" secondItem="9Mi-Y7-Nga" secondAttribute="leading" constant="36" id="Myx-Eu-MKb"/>
+                            <constraint firstItem="9Mi-Y7-Nga" firstAttribute="bottom" secondItem="M8e-Jd-1t0" secondAttribute="bottom" constant="96" id="SEv-JR-4sb"/>
+                            <constraint firstItem="slz-AX-0wN" firstAttribute="leading" secondItem="9Mi-Y7-Nga" secondAttribute="leading" constant="36" id="TJ2-2B-fvI"/>
+                            <constraint firstItem="M8e-Jd-1t0" firstAttribute="top" secondItem="slz-AX-0wN" secondAttribute="bottom" constant="12" id="dmg-Y3-0Hj"/>
+                            <constraint firstItem="4SM-ZO-fPG" firstAttribute="top" secondItem="2Qr-gR-lUP" secondAttribute="bottom" constant="2" id="ebJ-vj-kxW"/>
+                            <constraint firstItem="uba-mN-ca2" firstAttribute="trailing" secondItem="9Mi-Y7-Nga" secondAttribute="trailing" id="iLr-5o-JPD"/>
+                            <constraint firstItem="4SM-ZO-fPG" firstAttribute="leading" secondItem="9Mi-Y7-Nga" secondAttribute="leading" constant="121" id="jcd-ux-gS4"/>
+                            <constraint firstItem="2Qr-gR-lUP" firstAttribute="top" secondItem="9Mi-Y7-Nga" secondAttribute="top" constant="46" id="lDM-g2-tuX"/>
+                            <constraint firstItem="slz-AX-0wN" firstAttribute="top" secondItem="PFQ-wG-N1o" secondAttribute="bottom" constant="12" id="nMi-El-vN9"/>
+                            <constraint firstItem="M8e-Jd-1t0" firstAttribute="leading" secondItem="9Mi-Y7-Nga" secondAttribute="leading" constant="36" id="oOG-Oi-pbS"/>
+                            <constraint firstItem="uba-mN-ca2" firstAttribute="leading" secondItem="9Mi-Y7-Nga" secondAttribute="leading" id="wLT-7o-8lB"/>
+                            <constraint firstItem="uba-mN-ca2" firstAttribute="top" secondItem="TYc-ve-vb9" secondAttribute="top" id="xfP-87-pHi"/>
+                            <constraint firstItem="9Mi-Y7-Nga" firstAttribute="trailing" secondItem="2Qr-gR-lUP" secondAttribute="trailing" constant="37" id="zeP-cE-Emn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G5L-ly-j80" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-583" y="106"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Card Outline" width="500" height="347"/>
+        <image name="bankBtn" width="212" height="47"/>
         <image name="blueTab" width="353" height="82"/>
         <image name="greenBg" width="340" height="92"/>
+        <image name="loginBg" width="375" height="812"/>
         <image name="logout" width="32" height="30"/>
         <image name="menu" width="24" height="24"/>
+        <image name="plus" width="100" height="100"/>
+        <image name="userBtn" width="212" height="47"/>
         <image name="user_grey" width="24" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -3,20 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		65A4FB4BD38200BF7B1A6B43 /* Pods_Credit_Card_Fraud_Detection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCFC6BC3088C5DC8DAAA4427 /* Pods_Credit_Card_Fraud_Detection.framework */; };
 		D00057C925FD510D00C185A3 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00057C825FD510D00C185A3 /* Transactions.swift */; };
 		D00057CC25FD51A300C185A3 /* BankVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00057CB25FD51A300C185A3 /* BankVC.swift */; };
-		D00057CF25FD51BB00C185A3 /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00057CE25FD51BB00C185A3 /* UserVC.swift */; };
 		D00057D225FD51FC00C185A3 /* RecentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00057D125FD51FC00C185A3 /* RecentsCell.swift */; };
+		D014499025FE1514004D9D91 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D014498F25FE1514004D9D91 /* LoginVC.swift */; };
 		D06E682125FCCD7500B53895 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E682025FCCD7500B53895 /* AppDelegate.swift */; };
 		D06E682325FCCD7500B53895 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06E682225FCCD7500B53895 /* SceneDelegate.swift */; };
 		D06E682825FCCD7500B53895 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D06E682625FCCD7500B53895 /* Main.storyboard */; };
 		D06E682A25FCCD7800B53895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D06E682925FCCD7800B53895 /* Assets.xcassets */; };
 		D06E682D25FCCD7800B53895 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D06E682B25FCCD7800B53895 /* LaunchScreen.storyboard */; };
+		D09781C025FDFC1200F8E0E2 /* Fraud Detection 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D09781BF25FDFC1200F8E0E2 /* Fraud Detection 1.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +26,8 @@
 		CCFC6BC3088C5DC8DAAA4427 /* Pods_Credit_Card_Fraud_Detection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Credit_Card_Fraud_Detection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00057C825FD510D00C185A3 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
 		D00057CB25FD51A300C185A3 /* BankVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankVC.swift; sourceTree = "<group>"; };
-		D00057CE25FD51BB00C185A3 /* UserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
 		D00057D125FD51FC00C185A3 /* RecentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsCell.swift; sourceTree = "<group>"; };
+		D014498F25FE1514004D9D91 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		D06E681D25FCCD7500B53895 /* Credit Card Fraud Detection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Credit Card Fraud Detection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D06E682025FCCD7500B53895 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D06E682225FCCD7500B53895 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +35,7 @@
 		D06E682925FCCD7800B53895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D06E682C25FCCD7800B53895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D06E682E25FCCD7800B53895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D09781BF25FDFC1200F8E0E2 /* Fraud Detection 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = "Fraud Detection 1.mlmodel"; path = "ML/Fraud Detection 1.mlmodel"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +72,7 @@
 			children = (
 				D06E682225FCCD7500B53895 /* SceneDelegate.swift */,
 				D00057CB25FD51A300C185A3 /* BankVC.swift */,
-				D00057CE25FD51BB00C185A3 /* UserVC.swift */,
+				D014498F25FE1514004D9D91 /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				D00057C825FD510D00C185A3 /* Transactions.swift */,
+				D09781BF25FDFC1200F8E0E2 /* Fraud Detection 1.mlmodel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				D06E681925FCCD7500B53895 /* Sources */,
 				D06E681A25FCCD7500B53895 /* Frameworks */,
 				D06E681B25FCCD7500B53895 /* Resources */,
+				AB8F548C7AE1D2E44917E501 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -221,6 +225,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AB8F548C7AE1D2E44917E501 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Credit Card Fraud Detection/Pods-Credit Card Fraud Detection-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Credit Card Fraud Detection/Pods-Credit Card Fraud Detection-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Credit Card Fraud Detection/Pods-Credit Card Fraud Detection-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -229,7 +250,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D00057CC25FD51A300C185A3 /* BankVC.swift in Sources */,
-				D00057CF25FD51BB00C185A3 /* UserVC.swift in Sources */,
+				D09781C025FDFC1200F8E0E2 /* Fraud Detection 1.mlmodel in Sources */,
+				D014499025FE1514004D9D91 /* LoginVC.swift in Sources */,
 				D00057D225FD51FC00C185A3 /* RecentsCell.swift in Sources */,
 				D00057C925FD510D00C185A3 /* Transactions.swift in Sources */,
 				D06E682125FCCD7500B53895 /* AppDelegate.swift in Sources */,

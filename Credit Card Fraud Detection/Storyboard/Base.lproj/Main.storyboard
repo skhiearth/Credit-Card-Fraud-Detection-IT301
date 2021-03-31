@@ -321,11 +321,32 @@
                                 <color key="textColor" systemColor="systemGray2Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simran Gogia A2305218675" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svG-ry-Mtd">
+                                <rect key="frame" x="179" y="262.5" width="215" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Utkarsh A2305218717" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pf2-N6-QmF">
+                                <rect key="frame" x="225" y="289.5" width="169" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IY-YC-Goc">
+                                <rect key="frame" x="373" y="236.5" width="21" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9Mi-Y7-Nga"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="9Mi-Y7-Nga" firstAttribute="trailing" secondItem="svG-ry-Mtd" secondAttribute="trailing" constant="20" id="1fc-Wh-3tG"/>
+                            <constraint firstItem="svG-ry-Mtd" firstAttribute="top" secondItem="6IY-YC-Goc" secondAttribute="bottom" constant="8" symbolic="YES" id="3As-dt-cs3"/>
                             <constraint firstAttribute="bottom" secondItem="uba-mN-ca2" secondAttribute="bottom" id="AgM-1m-RvQ"/>
+                            <constraint firstItem="6IY-YC-Goc" firstAttribute="top" secondItem="4SM-ZO-fPG" secondAttribute="bottom" constant="60" id="AsG-O0-GBb"/>
                             <constraint firstItem="9Mi-Y7-Nga" firstAttribute="trailing" secondItem="4SM-ZO-fPG" secondAttribute="trailing" constant="37" id="KPt-c0-tvq"/>
                             <constraint firstItem="PFQ-wG-N1o" firstAttribute="leading" secondItem="9Mi-Y7-Nga" secondAttribute="leading" constant="36" id="Myx-Eu-MKb"/>
                             <constraint firstItem="9Mi-Y7-Nga" firstAttribute="bottom" secondItem="M8e-Jd-1t0" secondAttribute="bottom" constant="96" id="SEv-JR-4sb"/>
@@ -333,10 +354,13 @@
                             <constraint firstItem="M8e-Jd-1t0" firstAttribute="top" secondItem="slz-AX-0wN" secondAttribute="bottom" constant="12" id="dmg-Y3-0Hj"/>
                             <constraint firstItem="4SM-ZO-fPG" firstAttribute="top" secondItem="2Qr-gR-lUP" secondAttribute="bottom" constant="2" id="ebJ-vj-kxW"/>
                             <constraint firstItem="uba-mN-ca2" firstAttribute="trailing" secondItem="9Mi-Y7-Nga" secondAttribute="trailing" id="iLr-5o-JPD"/>
+                            <constraint firstItem="Pf2-N6-QmF" firstAttribute="top" secondItem="svG-ry-Mtd" secondAttribute="bottom" constant="6" id="ic3-hO-e23"/>
                             <constraint firstItem="4SM-ZO-fPG" firstAttribute="leading" secondItem="9Mi-Y7-Nga" secondAttribute="leading" constant="121" id="jcd-ux-gS4"/>
+                            <constraint firstItem="9Mi-Y7-Nga" firstAttribute="trailing" secondItem="Pf2-N6-QmF" secondAttribute="trailing" constant="20" id="l1b-IQ-iNz"/>
                             <constraint firstItem="2Qr-gR-lUP" firstAttribute="top" secondItem="9Mi-Y7-Nga" secondAttribute="top" constant="46" id="lDM-g2-tuX"/>
                             <constraint firstItem="slz-AX-0wN" firstAttribute="top" secondItem="PFQ-wG-N1o" secondAttribute="bottom" constant="12" id="nMi-El-vN9"/>
                             <constraint firstItem="M8e-Jd-1t0" firstAttribute="leading" secondItem="9Mi-Y7-Nga" secondAttribute="leading" constant="36" id="oOG-Oi-pbS"/>
+                            <constraint firstItem="9Mi-Y7-Nga" firstAttribute="trailing" secondItem="6IY-YC-Goc" secondAttribute="trailing" constant="20" id="tht-2m-8wK"/>
                             <constraint firstItem="uba-mN-ca2" firstAttribute="leading" secondItem="9Mi-Y7-Nga" secondAttribute="leading" id="wLT-7o-8lB"/>
                             <constraint firstItem="uba-mN-ca2" firstAttribute="top" secondItem="TYc-ve-vb9" secondAttribute="top" id="xfP-87-pHi"/>
                             <constraint firstItem="9Mi-Y7-Nga" firstAttribute="trailing" secondItem="2Qr-gR-lUP" secondAttribute="trailing" constant="37" id="zeP-cE-Emn"/>

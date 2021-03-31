@@ -12,28 +12,35 @@ var transactions = [
         "Customer": "Utkarsh",
         "Amount": "2000",
         "Status": "Approved",
-        "Recipient": "XYZ",
+        "Recipient": "Amazon",
         "Date": "21/01/2021"
     ],
     1: [
         "Customer": "Utkarsh",
         "Amount": "5000",
         "Status": "Rejected",
-        "Recipient": "Lorem ipsum",
-        "Date": "10/02/2021"
+        "Recipient": "Amazon",
+        "Date": "08/02/2021"
     ],
     2: [
         "Customer": "Simran",
         "Amount": "4500",
         "Status": "Approved",
-        "Recipient": "Dolor sen",
-        "Date": "11/02/2021"
+        "Recipient": "Etsy",
+        "Date": "11/03/2021"
     ],
     3: [
+        "Customer": "Simran",
+        "Amount": "95000",
+        "Status": "Approved",
+        "Recipient": "Flipkart",
+        "Date": "14/03/2021"
+    ],
+    4: [
         "Customer": "Utkarsh",
         "Amount": "6000",
         "Status": "Approved",
-        "Recipient": "ABC",
-        "Date": "12/03/2021"
+        "Recipient": "Apple",
+        "Date": "22/03/2021"
     ]
 ]
